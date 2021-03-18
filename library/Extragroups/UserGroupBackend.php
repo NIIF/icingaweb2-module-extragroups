@@ -90,7 +90,7 @@ class UserGroupBackend implements UserGroupBackendInterface
 
     protected function splitCommaSeparated($string)
     {
-        return preg_split('/\s*,\s*/', $string, -1, PREG_SPLIT_NO_EMPTY);
+        return preg_split('/\s*;\s*/', $string, -1, PREG_SPLIT_NO_EMPTY);
     }
 
     protected function fillPlaceHolders($string)
